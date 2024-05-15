@@ -1,0 +1,103 @@
+body {
+    background-color: #222;
+    color: #FFF;
+    font-family: sans-serif;
+    overflow-x: hidden;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.hero {
+    padding: 2em;
+    text-align: center;
+}
+
+.title {
+    text-transform: uppercase;
+    font-family: 'Oswald', sans-serif;
+    font-size: clamp(1em, 15vw, 16em);
+    letter-spacing: 5px;
+    word-spacing: -0.2em;
+    font-weight: 400;
+    line-height: 1em;
+    font-kerning: none;
+}
+
+.sub-title {
+    margin: 5em auto;
+    font-size: 1.5em;
+    max-width: 700px;
+    line-height: 34px;
+}
+
+.services {
+    padding: 2em;
+    max-width: 1100px;
+    margin: 2em auto;
+}
+
+.service {
+    box-shadow: 0 0 5em rgba(0, 0, 0, .4);
+}
+
+.service:nth-child(3) {
+    z-index: 1;
+    position: relative;
+}
+
+.services img {
+    width: 100%;
+    border-radius: 0 0 1em 1em;
+}
+
+.service div {
+    background-color: #FFF;
+    color: #000;
+    padding: 2em;
+    border-radius: 1em 1em 0 0;
+    text-align: center;
+}
+
+.service div p {
+    margin: 0.8em auto 0 auto;
+    max-width: 500px;
+    font-size: 1.1em;
+}
+
+footer {
+    max-width: 1100px;
+    margin: 2em auto 8em auto;
+    padding: 2em;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 2em;
+}
+
+footer p {
+    font-size: 1.2em;
+    line-height: 27px;
+    max-width: 300px;
+}
+
+footer h2 {
+    margin-bottom: 0.5em;
+}
+
+footer a {
+    font-size: 1.1em;
+    color: #FFF;
+    display: inline-block;
+    margin-top: 0.8em;
+}
+
+@media screen and (max-width: 600px) {
+    .sub-title, footer p {
+        font-size: 1.1em;
+    }
+}
